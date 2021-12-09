@@ -31,5 +31,10 @@ namespace T2_Elevador
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
