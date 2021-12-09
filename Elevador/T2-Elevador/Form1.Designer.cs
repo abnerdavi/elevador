@@ -40,15 +40,13 @@ namespace T2_Elevador
             this.bt_int_andar1 = new System.Windows.Forms.Button();
             this.bt_int_andar2 = new System.Windows.Forms.Button();
             this.bt_int_andar0 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.chkbx_manual = new System.Windows.Forms.CheckBox();
-            this.chkbx_automatico = new System.Windows.Forms.CheckBox();
+            this.tbx_modo_operacao = new System.Windows.Forms.TextBox();
+            this.tbx_nav_ext = new System.Windows.Forms.TextBox();
             this.pn_terreo = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbx_status_andar = new System.Windows.Forms.TextBox();
             this.bt_ext_terreo_sobe = new System.Windows.Forms.Button();
             this.tbx_terreo = new System.Windows.Forms.TextBox();
-            this.pn_ext_1andar = new System.Windows.Forms.Panel();
+            this.pn_1andar = new System.Windows.Forms.Panel();
             this.tbx_ext_1andar = new System.Windows.Forms.TextBox();
             this.btn_ext_1andar_sobe = new System.Windows.Forms.Button();
             this.btn_ext_1andar_desce = new System.Windows.Forms.Button();
@@ -60,30 +58,34 @@ namespace T2_Elevador
             this.tbx_ext_3andar = new System.Windows.Forms.TextBox();
             this.btn_ext_3andar_desce = new System.Windows.Forms.Button();
             this.btn_ext_3andar_sobe = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.pn_4andar = new System.Windows.Forms.Panel();
+            this.tbx_ext_4andar = new System.Windows.Forms.TextBox();
+            this.pn_5andar = new System.Windows.Forms.Panel();
+            this.tbx_ext_5andar = new System.Windows.Forms.TextBox();
+            this.btn_ext_5andar_desce = new System.Windows.Forms.Button();
+            this.btn_ext_5andar_sobe = new System.Windows.Forms.Button();
+            this.pn_6andar = new System.Windows.Forms.Panel();
+            this.tbx_ext_6andar = new System.Windows.Forms.TextBox();
+            this.btn_ext_6andar_desce = new System.Windows.Forms.Button();
+            this.btn_ext_6andar_sobe = new System.Windows.Forms.Button();
+            this.pn_7andar = new System.Windows.Forms.Panel();
+            this.tbx_ext_7andar = new System.Windows.Forms.TextBox();
+            this.btn_ext_7andar_desce = new System.Windows.Forms.Button();
+            this.btn_ext_7andar_sobe = new System.Windows.Forms.Button();
+            this.tbx_status_elevador = new System.Windows.Forms.TextBox();
+            this.btn_ext_4andar_sobe = new System.Windows.Forms.Button();
+            this.btn_ext_4andar_desce = new System.Windows.Forms.Button();
+            this.chckbx_manual = new System.Windows.Forms.RadioButton();
+            this.chckbx_automatico = new System.Windows.Forms.RadioButton();
             this.pn_interno.SuspendLayout();
             this.pn_terreo.SuspendLayout();
-            this.pn_ext_1andar.SuspendLayout();
+            this.pn_1andar.SuspendLayout();
             this.pn_2andar.SuspendLayout();
             this.pn_3andar.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.pn_4andar.SuspendLayout();
+            this.pn_5andar.SuspendLayout();
+            this.pn_6andar.SuspendLayout();
+            this.pn_7andar.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_painel_interno
@@ -223,53 +225,31 @@ namespace T2_Elevador
             this.bt_int_andar0.Text = "0";
             this.bt_int_andar0.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tbx_modo_operacao
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(472, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(395, 32);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Modo de operação";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbx_modo_operacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_modo_operacao.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tbx_modo_operacao.Location = new System.Drawing.Point(472, 20);
+            this.tbx_modo_operacao.Name = "tbx_modo_operacao";
+            this.tbx_modo_operacao.ReadOnly = true;
+            this.tbx_modo_operacao.Size = new System.Drawing.Size(395, 32);
+            this.tbx_modo_operacao.TabIndex = 1;
+            this.tbx_modo_operacao.Text = "Modo de operação";
+            this.tbx_modo_operacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbx_modo_operacao.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // tbx_nav_ext
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Location = new System.Drawing.Point(472, 124);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(395, 32);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Painel de Navegação Externo";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // chkbx_manual
-            // 
-            this.chkbx_manual.AutoSize = true;
-            this.chkbx_manual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbx_manual.Location = new System.Drawing.Point(524, 71);
-            this.chkbx_manual.Name = "chkbx_manual";
-            this.chkbx_manual.Size = new System.Drawing.Size(91, 28);
-            this.chkbx_manual.TabIndex = 3;
-            this.chkbx_manual.Text = "Manual";
-            this.chkbx_manual.UseVisualStyleBackColor = true;
-            // 
-            // chkbx_automatico
-            // 
-            this.chkbx_automatico.AutoSize = true;
-            this.chkbx_automatico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbx_automatico.Location = new System.Drawing.Point(701, 71);
-            this.chkbx_automatico.Name = "chkbx_automatico";
-            this.chkbx_automatico.Size = new System.Drawing.Size(123, 28);
-            this.chkbx_automatico.TabIndex = 4;
-            this.chkbx_automatico.Text = "Automático";
-            this.chkbx_automatico.UseVisualStyleBackColor = true;
+            this.tbx_nav_ext.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_nav_ext.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tbx_nav_ext.Location = new System.Drawing.Point(472, 124);
+            this.tbx_nav_ext.Name = "tbx_nav_ext";
+            this.tbx_nav_ext.ReadOnly = true;
+            this.tbx_nav_ext.Size = new System.Drawing.Size(395, 32);
+            this.tbx_nav_ext.TabIndex = 1;
+            this.tbx_nav_ext.Text = "Painel de Navegação Externo";
+            this.tbx_nav_ext.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbx_nav_ext.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pn_terreo
             // 
@@ -280,20 +260,22 @@ namespace T2_Elevador
             this.pn_terreo.Size = new System.Drawing.Size(109, 90);
             this.pn_terreo.TabIndex = 5;
             // 
-            // textBox3
+            // tbx_status_andar
             // 
-            this.textBox3.Font = new System.Drawing.Font("Lucida Console", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(718, 163);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(84, 74);
-            this.textBox3.TabIndex = 6;
+            this.tbx_status_andar.Font = new System.Drawing.Font("Lucida Console", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_status_andar.Location = new System.Drawing.Point(718, 163);
+            this.tbx_status_andar.Name = "tbx_status_andar";
+            this.tbx_status_andar.ReadOnly = true;
+            this.tbx_status_andar.Size = new System.Drawing.Size(84, 74);
+            this.tbx_status_andar.TabIndex = 6;
+            this.tbx_status_andar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bt_ext_terreo_sobe
             // 
             this.bt_ext_terreo_sobe.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ext_terreo_sobe.Location = new System.Drawing.Point(1, 29);
+            this.bt_ext_terreo_sobe.Location = new System.Drawing.Point(1, 23);
             this.bt_ext_terreo_sobe.Name = "bt_ext_terreo_sobe";
-            this.bt_ext_terreo_sobe.Size = new System.Drawing.Size(108, 50);
+            this.bt_ext_terreo_sobe.Size = new System.Drawing.Size(108, 64);
             this.bt_ext_terreo_sobe.TabIndex = 0;
             this.bt_ext_terreo_sobe.Text = "˄";
             this.bt_ext_terreo_sobe.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -310,15 +292,15 @@ namespace T2_Elevador
             this.tbx_terreo.Text = "Térreo";
             this.tbx_terreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pn_ext_1andar
+            // pn_1andar
             // 
-            this.pn_ext_1andar.Controls.Add(this.tbx_ext_1andar);
-            this.pn_ext_1andar.Controls.Add(this.btn_ext_1andar_desce);
-            this.pn_ext_1andar.Controls.Add(this.btn_ext_1andar_sobe);
-            this.pn_ext_1andar.Location = new System.Drawing.Point(565, 396);
-            this.pn_ext_1andar.Name = "pn_ext_1andar";
-            this.pn_ext_1andar.Size = new System.Drawing.Size(109, 90);
-            this.pn_ext_1andar.TabIndex = 5;
+            this.pn_1andar.Controls.Add(this.tbx_ext_1andar);
+            this.pn_1andar.Controls.Add(this.btn_ext_1andar_desce);
+            this.pn_1andar.Controls.Add(this.btn_ext_1andar_sobe);
+            this.pn_1andar.Location = new System.Drawing.Point(565, 396);
+            this.pn_1andar.Name = "pn_1andar";
+            this.pn_1andar.Size = new System.Drawing.Size(109, 90);
+            this.pn_1andar.TabIndex = 5;
             // 
             // tbx_ext_1andar
             // 
@@ -439,182 +421,232 @@ namespace T2_Elevador
             this.btn_ext_3andar_sobe.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_ext_3andar_sobe.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // pn_4andar
             // 
-            this.panel4.Controls.Add(this.textBox8);
-            this.panel4.Location = new System.Drawing.Point(449, 270);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(109, 90);
-            this.panel4.TabIndex = 5;
+            this.pn_4andar.Controls.Add(this.tbx_ext_4andar);
+            this.pn_4andar.Controls.Add(this.btn_ext_4andar_desce);
+            this.pn_4andar.Controls.Add(this.btn_ext_4andar_sobe);
+            this.pn_4andar.Location = new System.Drawing.Point(449, 270);
+            this.pn_4andar.Name = "pn_4andar";
+            this.pn_4andar.Size = new System.Drawing.Size(109, 90);
+            this.pn_4andar.TabIndex = 5;
             // 
-            // textBox8
+            // tbx_ext_4andar
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(0, 1);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(109, 22);
-            this.textBox8.TabIndex = 1;
-            this.textBox8.Text = "Térreo";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbx_ext_4andar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_ext_4andar.Location = new System.Drawing.Point(0, 1);
+            this.tbx_ext_4andar.Name = "tbx_ext_4andar";
+            this.tbx_ext_4andar.ReadOnly = true;
+            this.tbx_ext_4andar.Size = new System.Drawing.Size(109, 22);
+            this.tbx_ext_4andar.TabIndex = 1;
+            this.tbx_ext_4andar.Text = "4° Andar";
+            this.tbx_ext_4andar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel5
+            // pn_5andar
             // 
-            this.panel5.Controls.Add(this.textBox9);
-            this.panel5.Controls.Add(this.button8);
-            this.panel5.Controls.Add(this.button9);
-            this.panel5.Location = new System.Drawing.Point(564, 270);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(109, 90);
-            this.panel5.TabIndex = 5;
+            this.pn_5andar.Controls.Add(this.tbx_ext_5andar);
+            this.pn_5andar.Controls.Add(this.btn_ext_5andar_desce);
+            this.pn_5andar.Controls.Add(this.btn_ext_5andar_sobe);
+            this.pn_5andar.Location = new System.Drawing.Point(564, 270);
+            this.pn_5andar.Name = "pn_5andar";
+            this.pn_5andar.Size = new System.Drawing.Size(109, 90);
+            this.pn_5andar.TabIndex = 5;
             // 
-            // textBox9
+            // tbx_ext_5andar
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(0, 1);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(109, 22);
-            this.textBox9.TabIndex = 1;
-            this.textBox9.Text = "1° Andar";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbx_ext_5andar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_ext_5andar.Location = new System.Drawing.Point(0, 1);
+            this.tbx_ext_5andar.Name = "tbx_ext_5andar";
+            this.tbx_ext_5andar.ReadOnly = true;
+            this.tbx_ext_5andar.Size = new System.Drawing.Size(109, 22);
+            this.tbx_ext_5andar.TabIndex = 1;
+            this.tbx_ext_5andar.Text = "5° Andar";
+            this.tbx_ext_5andar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button8
+            // btn_ext_5andar_desce
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(1, 55);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(108, 35);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "˅";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn_ext_5andar_desce.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_5andar_desce.Location = new System.Drawing.Point(1, 55);
+            this.btn_ext_5andar_desce.Name = "btn_ext_5andar_desce";
+            this.btn_ext_5andar_desce.Size = new System.Drawing.Size(108, 35);
+            this.btn_ext_5andar_desce.TabIndex = 0;
+            this.btn_ext_5andar_desce.Text = "˅";
+            this.btn_ext_5andar_desce.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ext_5andar_desce.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btn_ext_5andar_sobe
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(1, 22);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(108, 35);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "˄";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn_ext_5andar_sobe.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_5andar_sobe.Location = new System.Drawing.Point(1, 22);
+            this.btn_ext_5andar_sobe.Name = "btn_ext_5andar_sobe";
+            this.btn_ext_5andar_sobe.Size = new System.Drawing.Size(108, 35);
+            this.btn_ext_5andar_sobe.TabIndex = 0;
+            this.btn_ext_5andar_sobe.Text = "˄";
+            this.btn_ext_5andar_sobe.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ext_5andar_sobe.UseVisualStyleBackColor = true;
             // 
-            // panel6
+            // pn_6andar
             // 
-            this.panel6.Controls.Add(this.textBox10);
-            this.panel6.Controls.Add(this.button10);
-            this.panel6.Controls.Add(this.button11);
-            this.panel6.Location = new System.Drawing.Point(679, 270);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(109, 90);
-            this.panel6.TabIndex = 5;
+            this.pn_6andar.Controls.Add(this.tbx_ext_6andar);
+            this.pn_6andar.Controls.Add(this.btn_ext_6andar_desce);
+            this.pn_6andar.Controls.Add(this.btn_ext_6andar_sobe);
+            this.pn_6andar.Location = new System.Drawing.Point(679, 270);
+            this.pn_6andar.Name = "pn_6andar";
+            this.pn_6andar.Size = new System.Drawing.Size(109, 90);
+            this.pn_6andar.TabIndex = 5;
             // 
-            // textBox10
+            // tbx_ext_6andar
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(0, 1);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(109, 22);
-            this.textBox10.TabIndex = 1;
-            this.textBox10.Text = "1° Andar";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbx_ext_6andar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_ext_6andar.Location = new System.Drawing.Point(0, 1);
+            this.tbx_ext_6andar.Name = "tbx_ext_6andar";
+            this.tbx_ext_6andar.ReadOnly = true;
+            this.tbx_ext_6andar.Size = new System.Drawing.Size(109, 22);
+            this.tbx_ext_6andar.TabIndex = 1;
+            this.tbx_ext_6andar.Text = "6° Andar";
+            this.tbx_ext_6andar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button10
+            // btn_ext_6andar_desce
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(1, 55);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(108, 35);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "˅";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.UseVisualStyleBackColor = true;
+            this.btn_ext_6andar_desce.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_6andar_desce.Location = new System.Drawing.Point(1, 55);
+            this.btn_ext_6andar_desce.Name = "btn_ext_6andar_desce";
+            this.btn_ext_6andar_desce.Size = new System.Drawing.Size(108, 35);
+            this.btn_ext_6andar_desce.TabIndex = 0;
+            this.btn_ext_6andar_desce.Text = "˅";
+            this.btn_ext_6andar_desce.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ext_6andar_desce.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btn_ext_6andar_sobe
             // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(1, 22);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(108, 35);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "˄";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.UseVisualStyleBackColor = true;
+            this.btn_ext_6andar_sobe.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_6andar_sobe.Location = new System.Drawing.Point(1, 22);
+            this.btn_ext_6andar_sobe.Name = "btn_ext_6andar_sobe";
+            this.btn_ext_6andar_sobe.Size = new System.Drawing.Size(108, 35);
+            this.btn_ext_6andar_sobe.TabIndex = 0;
+            this.btn_ext_6andar_sobe.Text = "˄";
+            this.btn_ext_6andar_sobe.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ext_6andar_sobe.UseVisualStyleBackColor = true;
             // 
-            // panel7
+            // pn_7andar
             // 
-            this.panel7.Controls.Add(this.textBox11);
-            this.panel7.Controls.Add(this.button12);
-            this.panel7.Controls.Add(this.button13);
-            this.panel7.Location = new System.Drawing.Point(794, 270);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(109, 90);
-            this.panel7.TabIndex = 5;
+            this.pn_7andar.Controls.Add(this.tbx_ext_7andar);
+            this.pn_7andar.Controls.Add(this.btn_ext_7andar_desce);
+            this.pn_7andar.Controls.Add(this.btn_ext_7andar_sobe);
+            this.pn_7andar.Location = new System.Drawing.Point(794, 270);
+            this.pn_7andar.Name = "pn_7andar";
+            this.pn_7andar.Size = new System.Drawing.Size(109, 90);
+            this.pn_7andar.TabIndex = 5;
             // 
-            // textBox11
+            // tbx_ext_7andar
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(0, 1);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(109, 22);
-            this.textBox11.TabIndex = 1;
-            this.textBox11.Text = "1° Andar";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbx_ext_7andar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_ext_7andar.Location = new System.Drawing.Point(0, 1);
+            this.tbx_ext_7andar.Name = "tbx_ext_7andar";
+            this.tbx_ext_7andar.ReadOnly = true;
+            this.tbx_ext_7andar.Size = new System.Drawing.Size(109, 22);
+            this.tbx_ext_7andar.TabIndex = 1;
+            this.tbx_ext_7andar.Text = "7° Andar";
+            this.tbx_ext_7andar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button12
+            // btn_ext_7andar_desce
             // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(1, 55);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(108, 35);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "˅";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button12.UseVisualStyleBackColor = true;
+            this.btn_ext_7andar_desce.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_7andar_desce.Location = new System.Drawing.Point(1, 55);
+            this.btn_ext_7andar_desce.Name = "btn_ext_7andar_desce";
+            this.btn_ext_7andar_desce.Size = new System.Drawing.Size(108, 35);
+            this.btn_ext_7andar_desce.TabIndex = 0;
+            this.btn_ext_7andar_desce.Text = "˅";
+            this.btn_ext_7andar_desce.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ext_7andar_desce.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btn_ext_7andar_sobe
             // 
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(1, 22);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(108, 35);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "˄";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button13.UseVisualStyleBackColor = true;
+            this.btn_ext_7andar_sobe.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_7andar_sobe.Location = new System.Drawing.Point(1, 22);
+            this.btn_ext_7andar_sobe.Name = "btn_ext_7andar_sobe";
+            this.btn_ext_7andar_sobe.Size = new System.Drawing.Size(108, 35);
+            this.btn_ext_7andar_sobe.TabIndex = 0;
+            this.btn_ext_7andar_sobe.Text = "˄";
+            this.btn_ext_7andar_sobe.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ext_7andar_sobe.UseVisualStyleBackColor = true;
             // 
-            // textBox12
+            // tbx_status_elevador
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(475, 187);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(211, 35);
-            this.textBox12.TabIndex = 7;
+            this.tbx_status_elevador.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_status_elevador.Location = new System.Drawing.Point(475, 187);
+            this.tbx_status_elevador.Name = "tbx_status_elevador";
+            this.tbx_status_elevador.ReadOnly = true;
+            this.tbx_status_elevador.Size = new System.Drawing.Size(211, 31);
+            this.tbx_status_elevador.TabIndex = 7;
+            this.tbx_status_elevador.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_ext_4andar_sobe
+            // 
+            this.btn_ext_4andar_sobe.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_4andar_sobe.Location = new System.Drawing.Point(1, 22);
+            this.btn_ext_4andar_sobe.Name = "btn_ext_4andar_sobe";
+            this.btn_ext_4andar_sobe.Size = new System.Drawing.Size(108, 35);
+            this.btn_ext_4andar_sobe.TabIndex = 0;
+            this.btn_ext_4andar_sobe.Text = "˄";
+            this.btn_ext_4andar_sobe.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ext_4andar_sobe.UseVisualStyleBackColor = true;
+            // 
+            // btn_ext_4andar_desce
+            // 
+            this.btn_ext_4andar_desce.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_4andar_desce.Location = new System.Drawing.Point(1, 55);
+            this.btn_ext_4andar_desce.Name = "btn_ext_4andar_desce";
+            this.btn_ext_4andar_desce.Size = new System.Drawing.Size(108, 35);
+            this.btn_ext_4andar_desce.TabIndex = 0;
+            this.btn_ext_4andar_desce.Text = "˅";
+            this.btn_ext_4andar_desce.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ext_4andar_desce.UseVisualStyleBackColor = true;
+            // 
+            // chckbx_manual
+            // 
+            this.chckbx_manual.AutoSize = true;
+            this.chckbx_manual.Checked = true;
+            this.chckbx_manual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbx_manual.Location = new System.Drawing.Point(525, 73);
+            this.chckbx_manual.Name = "chckbx_manual";
+            this.chckbx_manual.Size = new System.Drawing.Size(90, 28);
+            this.chckbx_manual.TabIndex = 8;
+            this.chckbx_manual.TabStop = true;
+            this.chckbx_manual.Text = "Manual";
+            this.chckbx_manual.UseVisualStyleBackColor = true;
+            // 
+            // chckbx_automatico
+            // 
+            this.chckbx_automatico.AutoSize = true;
+            this.chckbx_automatico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbx_automatico.Location = new System.Drawing.Point(702, 73);
+            this.chckbx_automatico.Name = "chckbx_automatico";
+            this.chckbx_automatico.Size = new System.Drawing.Size(122, 28);
+            this.chckbx_automatico.TabIndex = 8;
+            this.chckbx_automatico.Text = "Automático";
+            this.chckbx_automatico.UseVisualStyleBackColor = true;
             // 
             // tela1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 524);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.chckbx_automatico);
+            this.Controls.Add(this.chckbx_manual);
+            this.Controls.Add(this.tbx_status_elevador);
+            this.Controls.Add(this.tbx_status_andar);
+            this.Controls.Add(this.pn_7andar);
             this.Controls.Add(this.pn_3andar);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.pn_6andar);
             this.Controls.Add(this.pn_2andar);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.pn_ext_1andar);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pn_5andar);
+            this.Controls.Add(this.pn_1andar);
+            this.Controls.Add(this.pn_4andar);
             this.Controls.Add(this.pn_terreo);
-            this.Controls.Add(this.chkbx_automatico);
-            this.Controls.Add(this.chkbx_manual);
             this.Controls.Add(this.pn_interno);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbx_nav_ext);
+            this.Controls.Add(this.tbx_modo_operacao);
             this.Name = "tela1";
             this.Text = "Controle do Elevador";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -622,20 +654,20 @@ namespace T2_Elevador
             this.pn_interno.PerformLayout();
             this.pn_terreo.ResumeLayout(false);
             this.pn_terreo.PerformLayout();
-            this.pn_ext_1andar.ResumeLayout(false);
-            this.pn_ext_1andar.PerformLayout();
+            this.pn_1andar.ResumeLayout(false);
+            this.pn_1andar.PerformLayout();
             this.pn_2andar.ResumeLayout(false);
             this.pn_2andar.PerformLayout();
             this.pn_3andar.ResumeLayout(false);
             this.pn_3andar.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.pn_4andar.ResumeLayout(false);
+            this.pn_4andar.PerformLayout();
+            this.pn_5andar.ResumeLayout(false);
+            this.pn_5andar.PerformLayout();
+            this.pn_6andar.ResumeLayout(false);
+            this.pn_6andar.PerformLayout();
+            this.pn_7andar.ResumeLayout(false);
+            this.pn_7andar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -653,15 +685,13 @@ namespace T2_Elevador
         private System.Windows.Forms.Button bt_int_andar2;
         private System.Windows.Forms.Button bt_int_andar0;
         private System.Windows.Forms.Button bt_int_emergencia;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox chkbx_manual;
-        private System.Windows.Forms.CheckBox chkbx_automatico;
+        private System.Windows.Forms.TextBox tbx_modo_operacao;
+        private System.Windows.Forms.TextBox tbx_nav_ext;
         private System.Windows.Forms.Panel pn_terreo;
         private System.Windows.Forms.TextBox tbx_terreo;
         private System.Windows.Forms.Button bt_ext_terreo_sobe;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Panel pn_ext_1andar;
+        private System.Windows.Forms.TextBox tbx_status_andar;
+        private System.Windows.Forms.Panel pn_1andar;
         private System.Windows.Forms.TextBox tbx_ext_1andar;
         private System.Windows.Forms.Button btn_ext_1andar_sobe;
         private System.Windows.Forms.Button btn_ext_1andar_desce;
@@ -672,22 +702,26 @@ namespace T2_Elevador
         private System.Windows.Forms.Panel pn_3andar;
         private System.Windows.Forms.Button btn_ext_3andar_desce;
         private System.Windows.Forms.Button btn_ext_3andar_sobe;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Panel pn_4andar;
+        private System.Windows.Forms.TextBox tbx_ext_4andar;
+        private System.Windows.Forms.Panel pn_5andar;
+        private System.Windows.Forms.TextBox tbx_ext_5andar;
+        private System.Windows.Forms.Button btn_ext_5andar_desce;
+        private System.Windows.Forms.Button btn_ext_5andar_sobe;
+        private System.Windows.Forms.Panel pn_6andar;
+        private System.Windows.Forms.TextBox tbx_ext_6andar;
+        private System.Windows.Forms.Button btn_ext_6andar_desce;
+        private System.Windows.Forms.Button btn_ext_6andar_sobe;
+        private System.Windows.Forms.Panel pn_7andar;
+        private System.Windows.Forms.TextBox tbx_ext_7andar;
+        private System.Windows.Forms.Button btn_ext_7andar_desce;
+        private System.Windows.Forms.Button btn_ext_7andar_sobe;
+        private System.Windows.Forms.TextBox tbx_status_elevador;
         private System.Windows.Forms.TextBox tbx_ext_3andar;
+        private System.Windows.Forms.Button btn_ext_4andar_desce;
+        private System.Windows.Forms.Button btn_ext_4andar_sobe;
+        private System.Windows.Forms.RadioButton chckbx_manual;
+        private System.Windows.Forms.RadioButton chckbx_automatico;
     }
 }
 

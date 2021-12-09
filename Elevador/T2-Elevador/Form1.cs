@@ -19,7 +19,8 @@ namespace T2_Elevador
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            tbx_status_elevador.Text = "Parado";
+            tbx_status_andar.Text = "0";
         }
 
         private void button7_Click(object sender, EventArgs e)
