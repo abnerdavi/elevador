@@ -8,3 +8,7 @@ F:\Users\ADSM\source\repos\T2-sisup\Elevador\T2-Elevador\obj\Debug\T2-Elevador.c
 F:\Users\ADSM\source\repos\T2-sisup\Elevador\T2-Elevador\obj\Debug\T2-Elevador.csproj.CoreCompileInputs.cache
 F:\Users\ADSM\source\repos\T2-sisup\Elevador\T2-Elevador\obj\Debug\T2-Elevador.exe
 F:\Users\ADSM\source\repos\T2-sisup\Elevador\T2-Elevador\obj\Debug\T2-Elevador.pdb
+F:\Users\ADSM\source\repos\T2-sisup\Elevador\T2-Elevador\bin\Debug\log4net.config
+F:\Users\ADSM\source\repos\T2-sisup\Elevador\T2-Elevador\bin\Debug\log4net.dll
+F:\Users\ADSM\source\repos\T2-sisup\Elevador\T2-Elevador\bin\Debug\log4net.xml
+F:\Users\ADSM\source\repos\T2-sisup\Elevador\T2-Elevador\obj\Debug\T2-Elevador.csproj.CopyComplete
